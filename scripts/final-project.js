@@ -1,11 +1,5 @@
 
 
-// Fetch the current time and display it in the footer when the page loads
-document.addEventListener("DOMContentLoaded", () => {
-    fetchCurrentTime();
-});
-
-
 // Exported tasks array and functions
 
 // Define an array to store tasks
