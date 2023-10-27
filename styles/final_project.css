@@ -72,3 +72,13 @@ button {
 button:hover {
     background-color: #d32f2f;
 }
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
