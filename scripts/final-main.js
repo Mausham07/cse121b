@@ -1,6 +1,24 @@
 // Import the functions and tasks array from  ES module
 import { tasks, displayTasks, addTask, deleteTask, updateTaskStatus } from './final-project.js';
 
+// Function to fetch the current time and display it in the footer
+function fetchCurrentTime() {
+    const currentTimeSpan = document.getElementById("currentTime");
+
+    // Fetch the current time from an external source (e.g., Google Time API)
+    // You can use the previous code I provided to fetch the time
+
+    // For demonstration purposes, we'll use a placeholder time
+    const currentTime = new Date();
+    const formattedTime = currentTime.toLocaleString();
+    currentTimeSpan.textContent = formattedTime;
+}
+
+// Fetch the current time and display it in the footer when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    fetchCurrentTime();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Add a task when the "Add Task" button is clicked
     document.getElementById("addTask").addEventListener("click", () => {

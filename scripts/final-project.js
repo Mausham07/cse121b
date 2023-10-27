@@ -1,11 +1,9 @@
-fetch('tasks.json')
-    .then(response => response.json())
-    .then(data => {
-        // Push the fetched data into the 'tasks' array
-        tasks.push(...data);
-        displayTasks(); // Initialize the task list with the fetched tasks
-    })
-    .catch(error => console.error('Error fetching data:', error));
+
+
+// Fetch the current time and display it in the footer when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+    fetchCurrentTime();
+});
 
 
 // Exported tasks array and functions
